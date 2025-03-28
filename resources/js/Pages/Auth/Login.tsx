@@ -78,10 +78,7 @@ export default function Login({
                             name="remember"
                             checked={data.remember}
                             onChange={(e) =>
-                                setData(
-                                    "remember",
-                                    (e.target.checked || false) as false
-                                )
+                                setData("remember", e.target.checked || false)
                             }
                         />
                         <span className="ms-2 text-sm text-gray-600 dark:text-gray-400">
@@ -106,6 +103,12 @@ export default function Login({
                             Forgot your password?
                         </Link>
                     )}
+                    <Link
+                        href={route("register")}
+                        className="ml-4 rounded-md text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-offset-gray-800"
+                    >
+                        Need to register?
+                    </Link>
 
                     <PrimaryButton className="ms-4" disabled={processing}>
                         Log in

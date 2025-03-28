@@ -1,6 +1,6 @@
-1. install PHP, composer, laravel, bun, and postgresql on your machine
+1. install PHP, composer, laravel, bun, and postgresql on your machine, and make sure to set up correct environment variables on your machine
 
-2. go to your php.ini file and uncomment the lines: "extension=pdo_pgsql", "extension=pgsql", "extension=zip", and "extension=fileinfo" (remove the ; before each line and save the file)
+2. go to your php.ini file (use php --ini to see where it is) and uncomment the lines: "extension=pdo_pgsql", "extension=pgsql", "extension=zip", "extension=openssl", and "extension=fileinfo" (remove the ; before each line and save the file)
 
 3. set up a postgresql database with the name "enterchat"
 
